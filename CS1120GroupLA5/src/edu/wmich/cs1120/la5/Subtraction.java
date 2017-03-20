@@ -11,13 +11,13 @@ public class Subtraction implements IOperation {
 
 	/**
 	 * 
-	 * @param right 
-	 * @param left 
-	 * @return 
+	 * @param right
+	 * @param left
+	 * @return
 	 */
-	public int perform(IExpression right, IExpression left) { 
+	public int perform(IExpression left, IExpression right) {
 		// TODO Auto-generated method
-		return 0;
-	 } 
+		return left.getValue() - right.getValue();
+	}
 
 }
