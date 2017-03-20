@@ -10,12 +10,11 @@ package edu.wmich.cs1120.la5;
 public class LowArea extends Area {
 
 	/**
-	 * 
-	 * @return 
+	 * This method calculates and returns the consumed energy needed to pass a low area.
 	 */
-	public double calcConsumedEnergy() { 
-		// TODO Auto-generated method
-		return 0;
-	 } 
+	@Override
+	public double calcConsumedEnergy(){
+		return getBasicEnergyCost()*2;
+	} 
 
 }

@@ -10,12 +10,10 @@ package edu.wmich.cs1120.la5;
 public class HighArea extends Area {
 
 	/**
-	 * 
-	 * @return 
+	 * This method returns the energy needed to pass a high area.
 	 */
-	public double calcConsumedEnergy() { 
-		// TODO Auto-generated method
-		return 0;
-	 } 
-
+	@Override
+	public double calcConsumedEnergy(){
+		return getBasicEnergyCost()*4;
+	}
 }

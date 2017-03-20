@@ -7,6 +7,8 @@
 
 package edu.wmich.cs1120.la5;
 
+import java.io.IOException;
+
 import edu.wmich.cs1120.la5.TerrainScanner;
 
 public class MapCreatorFromDat implements IMapCreator {
@@ -17,7 +19,7 @@ public class MapCreatorFromDat implements IMapCreator {
 	 * @param threshold 
 	 * @param fileName 
 	 */
-	public void scanTerrain(int threshold, String fileName) { 
+	public void scanTerrain(String fileName, int threshold) throws IOException{ 
 		// TODO Auto-generated method
 	 }
 
