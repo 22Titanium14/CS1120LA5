@@ -16,9 +16,20 @@ public class ExpressionFactory {
 	 * @param operator 
 	 * @return 
 	 */
-	public IExpression getExpression(int val2, int val1, char operator) { 
+	public static IExpression getExpression(int left, int right, char operator) { 
 		// TODO Auto-generated method
-		return null;
+		Literal nLeft = new Literal(left);
+		Literal nRight = new Literal(right);
+		IOperation nOperator = new Addition();  //<--This method currently assumes that the .dat file is in correct format
+		switch(operator){
+		case '+':
+			nOperator = new Addition();
+			break;
+		case '-':
+			nOperator = new Subtraction();
+			break;
+		}
+		return new BinaryExpression(nOperator, nLeft, nRight);
 	 } 
 
 }
