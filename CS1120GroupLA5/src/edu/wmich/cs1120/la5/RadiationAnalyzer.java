@@ -10,7 +10,6 @@ package edu.wmich.cs1120.la5;
 import java.util.ArrayList;
 
 public class RadiationAnalyzer implements IRover {
-	private IMapCreator mc;
 	private ArrayList<IArea> path;
 	private String analysis;
 	/**
