@@ -7,6 +7,7 @@
 
 package edu.wmich.cs1120.la5;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface IRover {
@@ -20,7 +21,7 @@ public interface IRover {
 	 * 
 	 * @param path 
 	 */
-	public void setPath(IArea path);
+	public void setPath(ArrayList<IArea> path);
 
 	/**
 	 * 

@@ -7,58 +7,51 @@
 
 package edu.wmich.cs1120.la5;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class RadiationAnalyzer implements IRover {
-
+	private IMapCreator mc;
+	private ArrayList<IArea> path;
+	private String analysis;
 	/**
 	 * 
 	 */
 	public void analyzePath() { 
-		// TODO Auto-generated method
+		int idx = path.size();
+		double totalRads = 0;
+		for (int i = 0; i < idx; i++){
+			totalRads+=path.get(i).getRadiation();
+		}
+		setAnalysis(String.format("The Radiation is %.3f Rads", totalRads));
 	 }
 
 	/**
-	 * 
-	 * @param path 
+	 * This method sets the Array list of IArea type path that the rover will take 
+	 * @param path = the path the rover will take 
 	 */
-	public void setPath(IArea path) { 
-		// TODO Auto-generated method
-	 }
+	public void setPath(ArrayList<IArea> path) {this.path = path;}
 
 	/**
-	 * 
-	 * @return 
+	 * @return a String denoting the type of Analyzer being used. 
 	 */
-	public String getAnalysis() { 
-		// TODO Auto-generated method
-		return null;
-	 }
+	public String getAnalysis() {return this.analysis;}
 
 	/**
-	 * 
-	 * @return 
+	 * This method gets the Array list of IArea type path that the rover will take 
+	 * @return = the field path 
 	 */
-	public List<IArea> getPath() { 
-		// TODO Auto-generated method
-		return null;
-	 }
+	public ArrayList<IArea> getPath() { return this.path;}
 
 	/**
-	 * 
-	 * @param analysis 
+	 * Sets the analysis field 
+	 * @param analysis the full analysis of the radiation of the path.
 	 */
-	public void setAnalysis(String analysis) { 
-		// TODO Auto-generated method
-	 }
+	public void setAnalysis(String analysis) {this.analysis = analysis;}
 
 	/**
-	 * 
-	 * @return 
+	 * @return = the name of the Analyzer  
 	 */
-	public String toString() { 
-		// TODO Auto-generated method
-		return null;
-	 } 
+	public String toString() { return "Radiation";}
+
 
 }
