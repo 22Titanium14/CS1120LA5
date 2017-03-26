@@ -20,11 +20,12 @@ public class ElevationAnalyzer implements IRover {
 	public void analyzePath() { 
 		double avgElevation = 0;
 		
+		//Running total for loop for sum of elevation
 		for (int index = 0; index < path.size(); index++) {
 			avgElevation = path.get(index).getElevation();
 		}
-		avgElevation /= path.size();
-		setAnalysis(String.format("The average Elevation is  is %.3f Rads", avgElevation));
+		avgElevation /= path.size(); //Divide total by size for average
+		setAnalysis(String.format("The average Elevation is %.3f Rads", avgElevation));
 	 }
 
 	/**
@@ -32,7 +33,6 @@ public class ElevationAnalyzer implements IRover {
 	 * @param path Path of rover represented by Area ArrayList
 	 */
 	public void setPath(ArrayList<IArea> path) {
-		// TODO Auto-generated method stub
 		this.path = path;
 	}
 	
@@ -41,7 +41,6 @@ public class ElevationAnalyzer implements IRover {
 	 * @return Returns path of rover
 	 */
 	public ArrayList<IArea> getPath() { 
-		// TODO Auto-generated method
 		return this.path;
 	 }
 
@@ -50,7 +49,6 @@ public class ElevationAnalyzer implements IRover {
 	 * @param analysis Analysis of average elevation as string
 	 */
 	public void setAnalysis(String analysis) { 
-		// TODO Auto-generated method
 		this.analysis = analysis;
 	 }
 	
@@ -59,7 +57,6 @@ public class ElevationAnalyzer implements IRover {
 	 * @return Returns average elevation of path
 	 */
 	public String getAnalysis() { 
-		// TODO Auto-generated method
 		return this.analysis;
 	 }
 
@@ -68,10 +65,7 @@ public class ElevationAnalyzer implements IRover {
 	 * @return Returns type of analyzer (elevation)
 	 */
 	public String toString() { 
-		// TODO Auto-generated method
 		return "Elevation";
 	 }
-
-
 
 }

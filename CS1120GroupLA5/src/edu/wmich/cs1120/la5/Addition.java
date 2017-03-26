@@ -10,13 +10,12 @@ package edu.wmich.cs1120.la5;
 public class Addition implements IOperation {
 
 	/**
-	 * 
-	 * @param right
-	 * @param left
-	 * @return
+	 * Adds left and right value
+	 * @param left First value given by file
+	 * @param right Second value given by file
+	 * @return Returns sum of values
 	 */
 	public int perform(IExpression left, IExpression right) {
-		// TODO Auto-generated method
 		return left.getValue() + right.getValue();
 	}
 

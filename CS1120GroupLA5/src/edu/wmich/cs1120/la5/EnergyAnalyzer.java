@@ -18,7 +18,6 @@ public class EnergyAnalyzer implements IRover {
 	 * Analyzes the total energy cost of the path
 	 */
 	public void analyzePath() { 
-		// TODO Auto-generated method
 		double totalEnergy = 0;
 		
 		for (int index = 0; index < path.size(); index++) {
@@ -36,7 +35,6 @@ public class EnergyAnalyzer implements IRover {
 	 * @param path Path of rover represented by Area ArrayList
 	 */
 	public void setPath(ArrayList<IArea> path) {
-		// TODO Auto-generated method stub
 		this.path = path;
 	} 
 	
@@ -45,7 +43,6 @@ public class EnergyAnalyzer implements IRover {
 	 * @return Returns path of rover
 	 */
 	public ArrayList<IArea> getPath() { 
-		// TODO Auto-generated method
 		return this.path;
 	 }
 	
@@ -54,7 +51,6 @@ public class EnergyAnalyzer implements IRover {
 	 * @param analysis Analysis of total energy cost as string
 	 */
 	public void setAnalysis(String analysis) { 
-		// TODO Auto-generated method
 		this.analysis = analysis;
 	 }
 	
@@ -63,7 +59,6 @@ public class EnergyAnalyzer implements IRover {
 	 * @return Returns total energy cost of path
 	 */
 	public String getAnalysis() { 
-		// TODO Auto-generated method
 		return this.analysis;
 	 }
 
@@ -72,10 +67,7 @@ public class EnergyAnalyzer implements IRover {
 	 * @return Returns type of analyzer (energy)
 	 */
 	public String toString() { 
-		// TODO Auto-generated method
 		return "Energy";
 	 }
-
-
 
 }

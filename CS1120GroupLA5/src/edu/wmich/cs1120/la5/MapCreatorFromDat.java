@@ -23,7 +23,7 @@ public class MapCreatorFromDat implements IMapCreator {
 	 * @param fileName
 	 */
 	public void scanTerrain(String fileName, int threshold) throws IOException {
-		// TODO Auto-generated method
+		
 		RandomAccessFile randFile = new RandomAccessFile(fileName, "r");
 		ArrayList<Area> map = new ArrayList<Area>();
 		
@@ -78,14 +78,12 @@ public class MapCreatorFromDat implements IMapCreator {
 		scanner.setTerrain(terrain);
 
 		randFile.close();
-
 	}
 
 	/**
 	 * 
 	 */
 	public void setScanner(TerrainScanner scanner) {
-		// TODO Auto-generated method
 		this.scanner = scanner;
 	}
 
@@ -93,7 +91,6 @@ public class MapCreatorFromDat implements IMapCreator {
 	 * 
 	 */
 	public TerrainScanner getScanner() {
-		// TODO Auto-generated method
 		return this.scanner;
 	}
 

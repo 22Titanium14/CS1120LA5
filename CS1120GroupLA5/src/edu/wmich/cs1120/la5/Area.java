@@ -8,6 +8,7 @@
 package edu.wmich.cs1120.la5;
 
 public class Area implements IArea {
+	
 	private double basicEnergyCost;
 	private double elevation;
 	private double radiation;
@@ -17,7 +18,6 @@ public class Area implements IArea {
 	 */
 	@Override
 	public double getBasicEnergyCost() {
-		// TODO Auto-generated method stub
 		return basicEnergyCost;
 	}
 
@@ -39,19 +39,16 @@ public class Area implements IArea {
 	 */
 	@Override
 	public double getElevation() {
-		// TODO Auto-generated method stub
 		return this.elevation;
 	}
 
 	/**
 	 * This method receives a double value and stores it as this.elevation.
-	 * 
 	 * @param elevation
 	 *            a double value to be stored as this.elevation.
 	 */
 	@Override
 	public void setElevation(double elevation) {
-		// TODO Auto-generated method stub
 		this.elevation = elevation;
 	}
 
@@ -60,7 +57,6 @@ public class Area implements IArea {
 	 */
 	@Override
 	public double getRadiation() {
-		// TODO Auto-generated method stub
 		return this.radiation;
 	}
 
@@ -72,7 +68,6 @@ public class Area implements IArea {
 	 */
 	@Override
 	public void setRadiation(double radiation) {
-		// TODO Auto-generated method stub
 		this.radiation = radiation;
 	}
 
@@ -85,4 +80,5 @@ public class Area implements IArea {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+	
 }

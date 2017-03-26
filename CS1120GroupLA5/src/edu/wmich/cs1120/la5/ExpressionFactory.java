@@ -17,7 +17,6 @@ public class ExpressionFactory {
 	 * @return 
 	 */
 	public static IExpression getExpression(int left, int right, char operator) { 
-		// TODO Auto-generated method
 		Literal nLeft = new Literal(left);
 		Literal nRight = new Literal(right);
 		IOperation nOperator = new Addition();  //<--This method currently assumes that the .dat file is in correct format

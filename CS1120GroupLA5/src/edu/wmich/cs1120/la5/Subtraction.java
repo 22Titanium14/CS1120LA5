@@ -10,13 +10,12 @@ package edu.wmich.cs1120.la5;
 public class Subtraction implements IOperation {
 
 	/**
-	 * 
-	 * @param right
-	 * @param left
-	 * @return
+	 * Subtracts right value from left value
+	 * @param left First value given by file
+	 * @param right Second value given by file
+	 * @return Returns subtraction of values
 	 */
 	public int perform(IExpression left, IExpression right) {
-		// TODO Auto-generated method
 		return left.getValue() - right.getValue();
 	}
 

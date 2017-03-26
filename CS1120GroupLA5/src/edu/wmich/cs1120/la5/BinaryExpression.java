@@ -14,7 +14,6 @@ public class BinaryExpression implements IExpression {
 	private IOperation op;
 
 	BinaryExpression(IOperation op, IExpression left, IExpression right) {
-		// TODO Auto-generated method
 		this.op = op;
 		this.left = left;
 		this.right = right;
@@ -25,7 +24,6 @@ public class BinaryExpression implements IExpression {
 	 * @return
 	 */
 	public int getValue() {
-		// TODO Auto-generated method
 		return op.perform(left, right);
 	}
 

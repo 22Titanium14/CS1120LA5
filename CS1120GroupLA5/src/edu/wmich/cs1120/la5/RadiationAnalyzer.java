@@ -10,14 +10,17 @@ package edu.wmich.cs1120.la5;
 import java.util.ArrayList;
 
 public class RadiationAnalyzer implements IRover {
+	
 	private ArrayList<IArea> path;
 	private String analysis;
+	
 	/**
 	 * 
 	 */
 	public void analyzePath() { 
 		int idx = path.size();
 		double totalRads = 0;
+		
 		for (int i = 0; i < idx; i++){
 			totalRads+=path.get(i).getRadiation();
 		}
@@ -51,6 +54,5 @@ public class RadiationAnalyzer implements IRover {
 	 * @return = the name of the Analyzer  
 	 */
 	public String toString() {return "Radiation";}
-
 
 }

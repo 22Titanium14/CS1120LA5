@@ -16,7 +16,6 @@ public class Literal implements IExpression {
 	 * @param value
 	 */
 	Literal(int value) {
-		// TODO Auto-generated method
 		this.value = value;
 	}
 
