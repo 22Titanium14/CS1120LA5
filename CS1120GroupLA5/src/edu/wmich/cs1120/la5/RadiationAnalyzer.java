@@ -21,7 +21,7 @@ public class RadiationAnalyzer implements IRover {
 		for (int i = 0; i < idx; i++){
 			totalRads+=path.get(i).getRadiation();
 		}
-		setAnalysis(String.format("The Radiation is %.3f Rads", totalRads));
+		setAnalysis(String.format("The total Radiation is %.3f Rads", totalRads));
 	 }
 
 	/**
@@ -39,7 +39,7 @@ public class RadiationAnalyzer implements IRover {
 	 * This method gets the Array list of IArea type path that the rover will take 
 	 * @return = the field path 
 	 */
-	public ArrayList<IArea> getPath() { return this.path;}
+	public ArrayList<IArea> getPath() {return this.path;}
 
 	/**
 	 * Sets the analysis field 
@@ -50,7 +50,7 @@ public class RadiationAnalyzer implements IRover {
 	/**
 	 * @return = the name of the Analyzer  
 	 */
-	public String toString() { return "Radiation";}
+	public String toString() {return "Radiation";}
 
 
 }
