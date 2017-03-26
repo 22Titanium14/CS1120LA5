@@ -27,7 +27,7 @@ public class EnergyAnalyzer implements IRover {
 			else
 				totalEnergy += path.get(index).getBasicEnergyCost() * 2;
 		}
-		setAnalysis(String.format("The total Energy is  is %.3f Rads", totalEnergy));
+		setAnalysis(String.format("The total Energy cost is %.3f", totalEnergy));
 	 }
 
 	/**

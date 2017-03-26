@@ -25,7 +25,7 @@ public class ElevationAnalyzer implements IRover {
 			avgElevation = path.get(index).getElevation();
 		}
 		avgElevation /= path.size(); //Divide total by size for average
-		setAnalysis(String.format("The average Elevation is %.3f Rads", avgElevation));
+		setAnalysis(String.format("The average Elevation is %.3f", avgElevation));
 	 }
 
 	/**
