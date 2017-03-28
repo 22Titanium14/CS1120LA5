@@ -10,11 +10,11 @@ package edu.wmich.cs1120.la5;
 public class ExpressionFactory {
 
 	/**
-	 * 
-	 * @param val2 
-	 * @param val1 
-	 * @param operator 
-	 * @return 
+	 * This method creates a class system need for the .dat file access operations  
+	 * @param left: 1st numerical expression 
+	 * @param right: 2nd numerical expression 
+	 * @param operator: char that determines how to handle the numerical expressions.
+	 * @return: an Iexpression type object with the solution 
 	 */
 	public static IExpression getExpression(int left, int right, char operator) { 
 		Literal nLeft = new Literal(left);

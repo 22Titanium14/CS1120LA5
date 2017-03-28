@@ -18,7 +18,10 @@ public class Literal implements IExpression {
 	Literal(int value) {
 		this.value = value;
 	}
-
+	/**
+	 * getter method for the value field 
+	 *@return = the value field  
+	 */
 	public int getValue() {
 		return this.value;
 	}

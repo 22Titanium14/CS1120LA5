@@ -10,44 +10,47 @@ package edu.wmich.cs1120.la5;
 public interface IArea {
 
 	/**
-	 * 
-	 * @return 
+	 * This method returns the value stored in radiation
 	 */
 	public double getRadiation();
 
+
 	/**
-	 * 
-	 * @param elevation 
+	 * This method receives a double value and stores it as this.elevation.
+	 * @param elevation
+	 *            a double value to be stored as this.elevation.
 	 */
 	public void setElevation(double elevation);
 
 	/**
-	 * 
-	 * @return 
+	 * This method returns the value stored in this.basicEnergyCost.
 	 */
 	public double getBasicEnergyCost();
-
 	/**
+	 * This method receives a double value as the parameter and stores it as
+	 * this.basicEnergyCost.
 	 * 
-	 * @param basicEnergyCost 
+	 * @param basicEnergyCost
+	 *            a double value to be stored as this.basicEnergyCost
 	 */
 	public void setBasicEnergyCost(double basicEnergyCost);
 
 	/**
-	 * 
-	 * @return 
+	 * An Area is assumed impassable if it is neither high nor low area.
+	 * Therefore, this super-method returns a zero.
 	 */
 	public double calcConsumedEnergy();
 
 	/**
-	 * 
-	 * @return 
+	 * This method returns the value stored in this.elevation.
 	 */
 	public double getElevation();
 
 	/**
+	 * This method receives a double value and sets it to this.radiation.
 	 * 
-	 * @param radiation 
+	 * @param radiation
+	 *            the double value to be stored as radiation
 	 */
 	public void setRadiation(double radiation); 
 

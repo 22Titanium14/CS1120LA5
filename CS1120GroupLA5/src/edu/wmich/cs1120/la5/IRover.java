@@ -13,37 +13,34 @@ import java.util.List;
 public interface IRover {
 
 	/**
-	 * 
+	 * Analyzes path according to the type of analyzer.  
 	 */
 	public void analyzePath();
 
 	/**
-	 * 
-	 * @param path 
+	 * This method sets the Array list of IArea type path that the rover will take 
+	 * @param path = the path the rover will take 
 	 */
 	public void setPath(ArrayList<IArea> path);
 
 	/**
-	 * 
-	 * @return 
+	 * @return a String denoting the type of Analyzer being used. 
 	 */
 	public String getAnalysis();
 
 	/**
-	 * 
-	 * @return 
-	 */
-	public List<IArea> getPath();
+	 * This method gets the Array list of IArea type path that the rover will take 
+	 * @return = the field path 
+	 */ List<IArea> getPath();
 
 	/**
-	 * 
-	 * @param analysis 
+	 * Sets the analysis field 
+	 * @param analysis the full analysis of the radiation of the path.
 	 */
 	public void setAnalysis(String analysis);
 
 	/**
-	 * 
-	 * @return 
+	 * @return = the name of the Analyzer  
 	 */
 	public String toString(); 
 

@@ -18,9 +18,9 @@ public class MapCreatorFromDat implements IMapCreator {
 	private TerrainScanner scanner;
 
 	/**
-	 * 
-	 * @param threshold
-	 * @param fileName
+	 * Reads terrain file and stores result 
+	 * @param threshold: determines the what is the highest passable terrain 
+	 * @param fileName: the name of the terrain file (MUST BE IN PACKAGE) 
 	 */
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 		
@@ -81,14 +81,15 @@ public class MapCreatorFromDat implements IMapCreator {
 	}
 
 	/**
-	 * 
+	 * This method returns this.scanner;
 	 */
 	public void setScanner(TerrainScanner scanner) {
 		this.scanner = scanner;
 	}
 
 	/**
-	 * 
+	 * This method receives a TerrainScanner object and saves it to this.scanner.
+	 * @param scanner the TerrainScanner object to be stored in this.scanner.
 	 */
 	public TerrainScanner getScanner() {
 		return this.scanner;

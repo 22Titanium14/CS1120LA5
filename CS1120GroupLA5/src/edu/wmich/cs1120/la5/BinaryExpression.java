@@ -20,8 +20,8 @@ public class BinaryExpression implements IExpression {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * This method returns an int value answer to the expression given by the op operation field  
+	 * @return: the answer to the expression
 	 */
 	public int getValue() {
 		return op.perform(left, right);

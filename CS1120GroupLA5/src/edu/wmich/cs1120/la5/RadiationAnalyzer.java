@@ -15,7 +15,7 @@ public class RadiationAnalyzer implements IRover {
 	private String analysis;
 	
 	/**
-	 * 
+	 * finds the total amount of Radiation on the given path
 	 */
 	public void analyzePath() { 
 		int idx = path.size();
