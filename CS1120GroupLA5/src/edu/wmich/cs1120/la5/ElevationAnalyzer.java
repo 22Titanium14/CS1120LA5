@@ -22,7 +22,7 @@ public class ElevationAnalyzer implements IRover {
 		
 		//Running total for loop for sum of elevation
 		for (int index = 0; index < path.size(); index++) {
-			avgElevation = path.get(index).getElevation();
+			avgElevation += path.get(index).getElevation();
 		}
 		avgElevation /= path.size(); //Divide total by size for average
 		setAnalysis(String.format("The average Elevation is %.3f", avgElevation));
