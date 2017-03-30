@@ -21,11 +21,7 @@ public class EnergyAnalyzer implements IRover {
 		double totalEnergy = 0;
 		
 		for (int index = 0; index < path.size(); index++) {
-			//Multiply basicEnergyCost based on area type, add to running total
-			if (path.get(index) instanceof HighArea) 
-				totalEnergy += path.get(index).getBasicEnergyCost() * 4;
-			else
-				totalEnergy += path.get(index).getBasicEnergyCost() * 2;
+				totalEnergy += path.get(index).calcConsumedEnergy();
 		}
 		setAnalysis(String.format("The total Energy cost is %.3f", totalEnergy));
 	 }
